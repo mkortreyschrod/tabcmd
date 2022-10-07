@@ -69,6 +69,7 @@ class Errors:
 
     @staticmethod
     def check_common_error_codes_and_explain(logger, exception):
+        logger.info(exception)
         if Errors.is_expired_session(exception):
             logger.error(_("session.errors.session_expired"))
             # TODO: add session as an argument to this method
