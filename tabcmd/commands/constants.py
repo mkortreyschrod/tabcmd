@@ -78,4 +78,3 @@ class Errors:
             # session.renew_session()
         else:
             logger.info(exception)
-
